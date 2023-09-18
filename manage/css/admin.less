@@ -1,0 +1,1041 @@
+@mainColor : #575757;
+@acendGray :#7b5744;
+@radius :0.5em;
+//color: lighten(@mainColor, 10%);
+//color: darken(@mainColor, 10%);
+
+@font-face {
+	font-family: 'nazanin';
+	src: url('font/Far_Nazanin.eot');
+	src:
+		url('font/Far_Nazanin.woff') format('woff'),
+		url('font/Far_Nazanin.ttf') format('truetype'),
+		url('font/Far_Nazanin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/*--------------------------------------*/
+/*--------------- reset ----------------*/
+/*--------------------------------------*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font: inherit
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font: inherit
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	overflow-y: auto;
+	font-style: normal;
+}
+img {
+	vertical-align: middle;
+	border: 0;
+	display: inline-block;
+	width: 100%;
+}
+figure {
+	margin: 0;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+pre {
+	overflow: auto
+}
+code,kbd,pre,samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,th {
+	padding: 0;
+}
+input,button,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+button {
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/*--------------------------------------*/
+/*---------------- base ----------------*/
+/*--------------------------------------*/
+body {
+	background: #fff;
+	color: #000;
+	font-family: 'nazanin', 'tahoma', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,figcaption {
+	color: inherit
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+a {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+a:root {
+	color: darken(@mainColor, 10%);
+}
+a:active,
+a:hover {
+	outline: none;
+	text-decoration: none;
+}
+a:hover,a:focus {
+	color: @mainColor;
+	outline: none
+}
+*:focus {
+	outline: none
+}
+b,strong {
+	font-weight: bold
+}
+h1 {
+	font-size: 1.5em;
+	margin: 0.67em 0;
+}
+small {
+	font-size: 80%
+}
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+i {
+	font-style: normal
+}
+@media (min-width:2500px) {
+	body {
+		font-size: 200%
+	}
+}
+::selection {
+	background: rgba(126, 123, 99, 0.5);
+	color: #3c2e00
+}
+@media (min-width: 1300px) {
+	.hidden-lg {
+		display: none !important
+	}
+}
+@media (min-width: 800px) {
+	.hidden-md {
+		display: none !important
+	}
+}
+@media (max-width: 480px) {
+	.hidden-sm {
+		display: none !important
+	}
+}
+.hidden {
+	display: none !important
+}
+.ltr {
+	direction: ltr;
+	font-family: sans-serif;
+	line-height: 1.65em
+}
+
+
+
+
+
+/*--------------------------------------*/
+/*------------ page style --------------*/
+/*--------------------------------------*/
+body {
+	text-align: center;
+	padding: 1em;
+	padding-top: 3em;
+	position: relative;
+}
+.bg {
+	content: '';
+	background-image: url(img/bg.svg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 300vh;
+	z-index: -1;
+}
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+	margin-top: 0.5em;
+	color: @mainColor;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	position: relative;
+}
+h1 img ,
+h1 svg {
+	width: 8em;
+	max-width: 90vw;
+	transition: opacity 0.5s;
+}
+h1 a:hover img ,
+h1 a:hover svg {
+	opacity: 0.9;
+}
+h1 a:after {
+	position: absolute;
+	left: -11em;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	content: '';
+	width: 2em;
+	height: 2em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 477.18 477.18'%3E%3Cpath d='M145.19 238.57l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z' fill='%23bbb'/%3E%3C/svg%3E");
+	transition: all 1s 0s;
+	transform: translateX(0.5em);
+	opacity: 0;
+}
+h1 a:hover:after {
+	transition: all 1s 0.5s;
+	opacity:1;
+	transform: none
+} 
+h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 3em;
+}
+h2 b {
+	color: darken(@mainColor, 15%);
+}
+footer {
+	margin: auto;
+	margin-bottom: 2em;
+	margin-top: 3em;
+	max-width: 20em;
+	opacity: 0.5
+}
+footer .ltr {
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	margin-bottom: 0.5em;
+	color: @acendGray #918878
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-top: 1em;
+	}
+	footer {
+		margin-bottom: 1em;
+	}
+	h1 {
+		margin-top: 0;
+	}
+}
+.logout , .btn {
+	display: block;
+	padding: 0 1em;
+	line-height: 2em;
+//	background: #a0998f;
+	background: @acendGray;
+	width: 5em;
+	margin: 0 auto;
+	margin-top: 0.5em;
+	font-size: 0.8em;
+	color: white;
+	border-radius: @radius
+}
+.btn {
+	margin-top: 2em;
+	width: 15em;
+}
+.logout:hover, .btn:hover {
+	color: black
+}
+.footer-link {
+	display: block;
+	width: 100%;
+	border: none;
+	letter-spacing: -0.05em;
+	resize: none;
+	text-align: center;
+	margin-top: -1.5em;
+	font-weight: bold;
+	padding: 0 0.75em;
+	height: 4.25em;
+	color: #888;
+}
+
+
+
+
+/*--------------------------------------*/
+/*------------ manage home -------------*/
+/*--------------------------------------*/
+.manage-links {
+	text-align: center;
+	max-width: 20em;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: @radius;
+	padding: 1em;
+	box-shadow: 0 0 2em rgba(0, 0, 0, 0.08)
+}
+.manage-links li {
+	border-radius: @radius;
+	margin-bottom: 2em;
+	border: 1px solid  @mainColor;
+	transition: all 0.5s;
+	background: #fff;
+} 
+.manage-links a {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	display: block;
+}
+.manage-links li:hover {
+	background: #eee;
+}
+i {
+	font-family: sans-serif;
+	line-height: 0.6em;
+	position: relative;
+	top: 0.09em;
+}
+.manage-links hr {
+	position: relative;
+	bottom: 0.5em;
+	margin-bottom: 1.25em;
+	border:none;
+	height: 1px;
+	width: 100%;
+	overflow: visible;
+}
+.manage-links hr:after {
+	content:'' ;
+	position: absolute;
+	left: -1em;
+	right: -1em;
+	top: 0;
+	height: 1px;
+	background: #ddd
+}
+
+
+/*--------------------------------------*/
+/*---------------- text ----------------*/
+/*--------------------------------------*/
+.text {
+	text-align: justify;
+	padding: 1em;
+}
+.text p {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+
+
+
+/*--------------------------------------*/
+/*--------------- forms ----------------*/
+/*--------------------------------------*/
+.form-con {
+	text-align: center;
+	max-width: 20em;
+	/*  border: 1px solid #d4ab2f;*/
+	border-radius: @radius;
+	margin: auto;
+	overflow-x: hidden;
+	margin-bottom: 3em;
+	background: white;
+	box-shadow: 0 0 2em rgba(0, 0, 0, 0.08)
+}
+.form-con h3 {
+	/*  background: #D77F4D;*/
+	background: @mainColor;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+.form-con:target {
+	border-color: @mainColor;
+}
+.form-con:target h3 {
+	background: @mainColor;
+}
+form,
+.form {
+	width: 100%;
+	padding: 1em;
+	margin-top: 1em;
+}
+input {
+	display: block;
+	width: 100%;
+	margin-bottom: 2em;
+	transition: all 0.4s;
+}
+.input {
+	border: 1px solid #bbb;
+	border-radius: @radius;
+	padding: 0.25em 1em;
+	/*  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1)*/
+}
+.input:hover,
+.input:focus {
+	border-color: darken(@mainColor, 10%)
+}
+.submit {
+	/*  border: 2px solid #d4ab2f;*/
+	border: none;
+	border-radius: @radius;
+	background: @mainColor;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 0;
+	transition: all 0.4s;
+	padding: 0.25em 1em;
+	display: block;
+}
+a.submit {
+	margin-bottom: 1em
+}
+.delete-btn {
+	background: #936060
+}
+.submit-desabled {
+	background: #888;
+	pointer-events: none;
+}
+.submit:hover,
+.submit:focus {
+	background: @mainColor;
+	color: white;
+}
+.label {
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+.label span {
+	display: block;
+	font-size: 0.85em;
+	color: darken(@mainColor, 10%);
+}
+.label span.en {
+	font-family: sans-serif;
+	display: inline-block;
+	direction: ltr;
+	font-size: 0.75em;
+}
+button.submit ,
+.button {
+	width: calc(100% - 2em);
+	margin: 1em;
+	background: #ccc;
+	border: 1px solid #aaa;
+	color: darken(@mainColor, 40%);
+	border-radius: 0.5em
+}
+.flex-input-con {
+	display: flex;
+}
+.flex-input {
+	flex-grow: 1
+}
+textarea.input {
+	width: 100%;
+	min-height: 15em;
+	resize: vertical;
+	border-radius: @radius 1em 1em 0;
+	transition: max-height 2s;
+	margin-bottom: 1em;
+}
+textarea.input.hide {
+	max-height: 0;
+}
+
+
+
+
+/*--------------------------------------*/
+/*---------- input file form -----------*/
+/*--------------------------------------*/
+.input-file-container {
+	position: relative;
+	margin-bottom: 1em;
+	min-height: 3.5em;
+	overflow: hidden;
+}
+.js .input-file-trigger {
+	display: block;
+	padding: 0.25em 1em;
+	background: #ddd;
+	color: darken(@mainColor, 40%);
+	font-size: 1em;
+	transition: all .4s;
+	cursor: pointer;
+	border-radius: @radius;
+	border: 1px solid @mainColor;
+}
+.js .input-file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding: 1em 0;
+	cursor: pointer;
+	direction: ltr;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+	background: @acendGray;
+	color: #fff;
+}
+.file-return {
+	margin: 0;
+	font-family: sans-serif;
+}
+.file-return:not(:empty) {
+	margin: 1em 0;
+}
+.js .file-return {
+	font-size: .9em;
+	font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+	content: "Selected file: ";
+	font-style: normal;
+	font-weight: normal;
+}
+.respond {
+	font-size: 1em;
+	/*  line-height: 3em;*/
+	padding-top: 1em;
+	margin: 0;
+	overflow: hidden;
+	transition: all 1s;
+	max-height: 6em;
+	padding: 2em;
+	padding-bottom: 1em;
+}
+.respond-error {
+	color: darkred
+}
+.respond-error:before ,
+.respond-ok:before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-left: 0.5em;
+	position: relative;
+	top: 0.25em;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs/%3E%3Cpath d='M323 62.6l178.7 309.6a77.3 77.3 0 01-67 115.8H256l-61.8-232L256 24a77.2 77.2 0 0167 38.6z' fill='%233b4145'/%3E%3Cpath d='M189 62.6L10.4 372.2a77.3 77.3 0 0067 115.8H256V24a77.2 77.2 0 00-67 38.6z' fill='%23525a61'/%3E%3Cpath d='M475 387.7L296.1 78c-8-14-22.9-22.8-38.9-23.2l152.9 402.3h24.5a46.4 46.4 0 0040.2-69.5z' fill='%23ffb751'/%3E%3Cpath d='M444.9 387.7a52 52 0 015.3 23.1c0 25.6-18 46.4-40 46.4h-333a46.4 46.4 0 01-40.1-69.5L215.8 78a46.6 46.6 0 0141.5-23.2c13.8.5 26.4 9.3 33.4 23.2l154.2 309.6z' fill='%23ffd764'/%3E%3Cpath d='M256 354.1v51.5a25.8 25.8 0 100-51.5z' fill='%233b4145'/%3E%3Cpath d='M256 354.1c2.8 0 5.2 11.6 5.2 25.8 0 14.2-2.4 25.7-5.2 25.7a25.8 25.8 0 110-51.5z' fill='%23525a61'/%3E%3Cpath d='M256 132.6v190.6a25.8 25.8 0 0025.8-25.7V158.4a25.8 25.8 0 00-25.8-25.8z' fill='%233b4145'/%3E%3Cpath d='M256 132.6c2.8 0 5.2 11.6 5.2 25.8v139c0 14.3-2.4 25.8-5.2 25.8a25.8 25.8 0 01-25.8-25.7V158.4a25.8 25.8 0 0125.8-25.8z' fill='%23525a61'/%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.respond-ok:before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 455.4 455.4'%3E%3Cpath d='M405.5 412.8c-69.7 56.9-287.3 56.9-355.6 0-69.7-57-62.5-300.1 0-364.1s293-64 355.6 0 69.7 307.2 0 364z' fill='%2383a764'/%3E%3Cpath d='M229.1 313.2C166.6 363 97 388.6 31.4 390-16.9 307.5-7 107 50 48.7 101.1-4 262-14 354.3 18.8 377 112.7 330 232.1 229 313.2z' fill='%23fff' opacity='.2'/%3E%3Cpath d='M195 354.5c-10 0-20-4.3-25.6-12.8L89.8 239.3c-11.4-14.3-8.6-34.2 5.6-45.6s34.2-8.5 45.6 5.7l54 69.7 119.5-155c11.3-14.2 31.3-17 45.5-5.7s17 31.3 5.7 45.5L220.6 341.7c-7.1 7-15.6 12.8-25.6 12.8z' fill='%23fff'/%3E%3C/svg%3E");
+	
+}
+.hide-anim {
+	max-height: 0;
+	padding: 0
+}
+/*--------------------------------------*/
+/*--------------- togle ----------------*/
+/*--------------------------------------*/
+.togle {
+	max-height: 0;
+	transition: all 2s;
+	overflow: hidden;
+}
+.togle.show {
+	max-height: 1000px
+}
+/*--------------------------------------*/
+/*------------- radio input ------------*/
+/*--------------------------------------*/
+.tab-con {
+	margin-top: -2em;
+	margin-bottom: 2em;
+	margin-left: -1em;
+	margin-right: -1em;
+	border-bottom: 1px solid @mainColor;
+	background: #e2ded5;
+}
+.radio-input {
+	overflow: hidden;
+	width: 50%;
+}
+.tab-con label {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+.radio-input input {
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden
+}
+.tab-box {
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	margin: 0;
+	border-radius: 0.65em 0.65em 0 0;
+	white-space: nowrap;
+	transition: all 0.3s;
+	font-size: 1em;
+	line-height: 1em;
+}
+.radio-input input:checked + .tab-box {
+	background: @mainColor;;
+	color: white;
+}
+/*--------------------------------------*/
+/*-------------- checkbox --------------*/
+/*--------------------------------------*/
+label.switch {
+	height: 1em;
+	position: relative;
+	width: 2em;
+	transform: none;
+	display: inline-block;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
+.switch input {
+	display: none;
+}
+.switch-slider {
+	/*  background-color: #ddd;*/
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+	border: 2px solid #bbb;
+}
+.switch-slider:before {
+	/*  background-color: #ccc;*/
+	background-color: #fff;
+	top: 0.1em;
+	content: "";
+	height: 0.6em;
+	left: 0.1em;
+	position: absolute;
+	transition: .4s;
+	width: 0.6em;
+	border: 2px solid #bbb;
+}
+.switch input:hover + .switch-slider,
+.switch input:focus + .switch-slider {
+	border: 2px solid #999;
+}
+.switch input:hover + .switch-slider:before,
+.switch input:focus + .switch-slider:before {
+	border: 2px solid #999;
+}
+.checkinput:checked + .switch-slider:before {
+	transform: translateX(1em);
+	background: #bbb;
+}
+.switch-slider.round {
+	border-radius: @radius;
+}
+.switch-slider.round:before {
+	border-radius: 50%;
+}
+.checkbox-label {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	bottom: 0.3em;
+	color: #888;
+	opacity: 0.75
+}
+.no-m-btn {
+	margin-bottom: 1em;
+}
+
+
+/*--------------------------------------*/
+/*---------------- radio ---------------*/
+/*--------------------------------------*/
+.radio-con {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-align: left;
+}
+.radio-container {
+	display: block;
+	position: relative;
+	margin-bottom: 1em;
+	cursor: pointer;
+	user-select: none;
+	transition: color 0.5s;
+}
+.radio-container-list {
+	border-top:  1px solid #ccc;
+	padding-top: 1em;
+}
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.radio-con i {
+	font-size: 0.75em;
+	display: block;
+	opacity: 0.5;
+	font-family: 'nazanin', sans-serif;
+}
+.checkmark {
+	position: absolute;
+	top: 1.75em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0.75em;
+	height: 0.75em;
+	transition: all 0.5s;
+	border: 3px solid #ddd;
+	border-radius: 50%
+}
+.works .checkmark {
+	top: 2.75em;
+}
+.works {
+	margin-bottom: 2em;
+}
+.radio-container-list .checkmark{
+	right: auto;
+	top: 1em;
+}
+.radio-container:hover .checkmark {
+	border: 3px solid #ccc;
+	transform: translateY(0.25em)
+}
+.radio-container:hover {
+	color: @acendGray
+}
+
+.radio-container input:checked ~ .checkmark {
+	background: @mainColor;
+	border: 3px solid darken(@mainColor, 15%);
+}
+
+.radio-container:hover .checkmark:after {
+	transform: translateY(0.25em)
+}
+.radio-container input:checked ~ .checkmark:after {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------*/
+/*---------- responsive design ---------*/
+/*--------------------------------------*/
+@media (min-width:761px) {
+	.form-con-responsive {
+		max-width: 45em;
+	}
+	.responsive-con {
+		display: flex;
+		justify-content: space-between;
+		/* flex-direction: row-reverse*/
+	}
+	.responsive-item {
+		flex-basis: calc(50% - 0.5em);
+	}
+}
+
+
+
+/*---------------------------------------*/
+/*- change header color based on responces -*/
+/*---------------------------------------*/
+.header-error {
+	background: #a32a2a !important
+}
+.header-ok {
+	background: #5d8949 !important
+}
+
+
+
+/*--------------------------------------*/
+/*-------- dynamic height textare ------*/
+/*--------------------------------------*/
+.textarea-container {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2em;
+	margin-top: 0.5em;
+}
+.textarea-container div,
+.textarea-container textarea {
+	word-wrap: break-word;
+	box-sizing: border-box;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.75em;
+	width: 100%;
+}
+.textarea-container textarea {
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 0;
+	border: none;
+}
+.textarea-container div {
+	padding-bottom: 2.5em;
+	visibility: hidden;
+	min-height: 10em;
+}
+.label-btn {
+	font-size: 0.9em;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+/*--------------------------------------*/
+/*---------- select menu input ---------*/
+/*--------------------------------------*/
+.select-form-con {
+	overflow: visible
+}
+.select-form-con h3 {
+	border-radius: @radius 1em 0 0 ;
+}
+.custom-select {
+	position: relative;
+	width: 100%;
+	margin-bottom: 2em;
+	margin-top: 0.5em;
+	user-select: none
+}
+.custom-select select {
+	display: none;
+}
+.select-selected {
+	background-color: #ddd;
+	color: gray;
+	border: 1px solid #bbb;
+	border-radius: 2em;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 1em;
+	right: 1em;
+	width: 0;
+	height: 0;
+	border: 0.4em solid transparent;
+	border-color: @acendGray transparent transparent transparent;
+}
+.select-selected.select-arrow-active {
+	border-radius: @radius 1em 0 0 
+}
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent @acendGray transparent;
+	top: 0.5em;
+}
+.select-items div,
+.select-selected {
+	color: #555;
+	padding: 0.25em 1em;
+	border: 1px solid #ddd;
+	border-top: none;
+	cursor: pointer;
+	background: #eee;
+	letter-spacing: 0.1em;
+}
+.rtl .select-items div , 
+.rtl .select-selected {
+	letter-spacing: -0.03em;
+}
+.select-selected {
+	border: 1px solid #ddd;
+}
+.select-items div {
+	padding: 0.45em 1em;
+}
+.select-items {
+	position: absolute;
+	background-color: none;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.select-items div:last-child {
+	border-radius: 0 0 1em 1em;
+}
+.select-hide {
+	display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+	background-color:#ddd
+}
+
+.reset-btn {
+	margin-top: 1em;
+	background: #bbb
+}
+
+
+
+/*--------------------------------------*/
+/*--------------- sortabe --------------*/
+/*--------------------------------------*/
+.sortabe {
+	border-radius: @radius;
+	margin-bottom: 0.25em;
+	border: 1px solid lighten(@mainColor, 20%);;
+	padding: 0.6em 0 ;
+}
+.sorting-class {
+	background: #bbb;
+	border:none;
+	opacity: 0.5
+}
+.sortabe:after,
+.sortabe:before{
+	position: absolute;
+	left: 0.5em;
+	height: 0.5em;
+	content: '';
+	display: block;
+	border: 0.5em solid transparent;
+}
+.sortabe:after {
+	top: 0.4em;
+	border-bottom:  0.5em solid #bbb;
+}
+.sortabe:before {
+	top: 1.65em;
+	border-top:  0.5em solid #bbb;
+}
+.sorting-class:after {
+	border-bottom:  0.5em solid @acendGray;
+}
+.sorting-class:before {
+	border-top:  0.5em solid @acendGray;
+}
+
+
+
+
+
+/*--------------------------------------*/
+/*------------- progressBar ------------*/
+/*--------------------------------------*/
+.progressBar {
+	height: 0.75em;
+	border-radius: 0.5em;
+	width: 100%;
+	background: #ddd;
+	border: 1px solid @mainColor;
+	overflow: hidden
+}
+.progressBarInside {
+	height: 0.75em;
+	background: @acendGray;
+	margin-right: auto;
+	display: block;
+}
+
+.radio-container svg {
+	position: absolute;
+	right: 0;
+	top: 1.2em;
+	height: auto;
+	width: 1em;
+	fill:@acendGray 
+}

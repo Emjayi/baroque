@@ -1,0 +1,74 @@
+#about-text p {
+	opacity: 1;
+	transform: none
+}
+.about-img {
+	visibility: visible !important;
+}
+.about-main-svg-bg,
+.about-main-svg ,
+.team-img-paralex {
+	display: none
+}
+.team-img-job ,
+.no-js{
+	display: block
+}
+.team-img-paralex-noJs {
+	display: block;
+	z-index: 4
+}
+
+.grid-img img {
+	width: auto;
+	height: 30vh
+}
+.grid-img ,
+.grid-link
+{
+	position: relative
+}
+.grid-con {
+	white-space: nowrap
+}
+.grid-parent-con {
+	width: inherit;
+}
+.grid-item {
+	min-width: 25vw;
+	display: inline-block;
+	float: none;
+}
+.grid-item:nth-child(2n) {
+	position: relative;
+	top: 35vh
+}
+.hide-until-load ,
+.lazy .grid-img {
+	display: none;
+}
+.lazy .grid-img-noJs {
+	display: block 
+}
+.project-text-list h3,
+.project-text-list dd span,
+.project-text-list dt {
+	opacity: 1
+}
+.menu-btn {
+	display: none
+}
+.menu-btn-noJS {
+	display: block
+}
+.menu-btn ,.share {
+	display: none
+}
+.menu-btn-noJS {
+	display: block
+}
+.logo * ,
+.site-title 
+{
+	transition: none
+}
