@@ -25,7 +25,7 @@ $minifyHtml = false;
 /*------------- site url ---------------*/
 /*--------------------------------------*/
 $domain_name =
-	'localhost/baroque';
+	'baroque';
 
 $site_url =
 	'' . $domain_name . '/';
@@ -36,7 +36,7 @@ $site_url =
 /*----------- site main texts ----------*/
 /*--------------------------------------*/
 $site_owner =
-	'Mohammad Reza Kohzadi';
+	'Baroque';
 $title =
 	$site_owner . ' official website';
 
