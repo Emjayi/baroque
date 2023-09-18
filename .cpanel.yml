@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/codese/public_html/baroque
+    - /bin/cp -R * $DEPLOYPATH
