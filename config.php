@@ -36,7 +36,7 @@ $site_url =
 /*----------- site main texts ----------*/
 /*--------------------------------------*/
 $site_owner =
-	'Baroque';
+	'baroque';
 $title =
 	$site_owner . ' official website';
 
@@ -45,7 +45,7 @@ $description =
 	$site_owner . '; architect and designer';
 
 $site_owner_fa =
-	'محمد رضا کهزادی';
+	'محمد خدایی';
 $description_fa =
 	'دفتر معماری' . $site_owner_fa . ': طراحی معماری ، طراحی داخلی ، طراحی نما';
 
@@ -54,41 +54,41 @@ $description_fa =
 /*--------------- social ---------------*/
 /*--------------------------------------*/
 $facebook_location =
-	'https://www.facebook.com/mohamadreza.kohzadi';
+	'https://www.facebook.com/mohamadreza.khodayi';
 $facebook_location_txt =
-	'mohamadreza.kohzadi';
+	'mohamadreza.khodayi';
 $insta_location =
-	'https://www.instagram.com/mrk.office/';
+	'https://www.instagram.com/baroque/';
 $insta_location_txt =
-	'mrk.office';
+	'baroque';
 $linkedin_location =
-	'https://www.linkedin.com/in/mohammad-reza-kohzadi-504b6377';
+	'https://www.linkedin.com/in/mohammad-khodayi';
 $linkedin_location_txt =
-	'mohammad-reza-kohzadi';
+	'mohammad-khodayi';
 $telegram_location =
-	'https://t.me/mrkoffice';
+	'https://t.me/baroque';
 $telegram_location_txt =
-	'mrkoffice';
+	'baroque';
 
 /*--------------------------------------*/
 /*---------------- phone ---------------*/
 /*--------------------------------------*/
 $phone_mob =
-	'+989113936140';
+	'+989150036975';
 $phone_mob_display =
-	'0911 393 61 40';
+	'0915 003 69 75';
 
 $phone =
-	'+981154230572';
+	'+985154230572';
 $phone_display =
-	'011 54 23 05 72';
+	'051 54 23 05 72';
 
 
 /*--------------------------------------*/
 /*-------------- contact ---------------*/
 /*--------------------------------------*/
 $postal_address =
-	'No.61, Mirzaye-shirazi street, Tonekabon, Mazandaran, Iran';
+	'No.61, Mirzaye-shirazi street, Tonekabon, Mashhad, Iran';
 $location_lat =
 	/*'36.8113942';*/
 	'36.8126526';

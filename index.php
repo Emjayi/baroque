@@ -20,7 +20,7 @@ require($path . 'php/header.php');
 <article>
 	<!-- visible texts -->
 
-	<h1 class="hiddener">mohammad reza kohzadi</h1>
+	<h1 class="hiddener">mohammad khodayi</h1>
 	<h2 class="home-title"><span>architecture.</span><span>design.</span></h2>
 
 	<!-- hidden txts , in order to improve seo -->
