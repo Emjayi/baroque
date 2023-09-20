@@ -336,22 +336,22 @@ article {
 .logo-l {
     width: 1em;
     height: 5em;
-    left: 1em;
+    left: 0em;
     top: 0;
-    -webkit-transform: translateX(-50vw) translateX(1.6em) scaleY(15);
-    -ms-transform: translateX(-50vw) translateX(1.6em) scaleY(15);
-    transform: translateX(-50vw) translateX(1.6em) scaleY(15);
+    -webkit-transform: translateX(-47vw) translateX(1.7em) scaleY(15);
+    -ms-transform: translateX(-47vw) translateX(1.7em) scaleY(15);
+    transform: translateX(-47vw) translateX(1.7em) scaleY(15);
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 .logo-r {
     width: 1em;
     height: 5em;
-    right: 1em;
+    right: 0em;
     top: 0;
-    -webkit-transform: translateX(50vw) translateX(-1.6em) scaleY(15);
-    -ms-transform: translateX(50vw) translateX(-1.6em) scaleY(15);
-    transform: translateX(50vw) translateX(-1.6em) scaleY(15);
+    -webkit-transform: translateX(47vw) translateX(-1.7em) scaleY(15);
+    -ms-transform: translateX(47vw) translateX(-1.7em) scaleY(15);
+    transform: translateX(47vw) translateX(-1.7em) scaleY(15);
     -webkit-animation-duration: 1.4s;
     animation-duration: 1.4s;
 }
@@ -363,7 +363,7 @@ article {
     -webkit-transform: translateY(-50vh) translateY(2.25em) scaleX(15);
     -ms-transform: translateY(-50vh) translateY(2.25em) scaleX(15);
     transform: translateY(-50vh) translateY(2.25em) scaleX(15);
-    transform: translateY(var(--vh-50)) translateY(2.25em) scaleX(15);
+    transform: translateY(var(--vh-10)) translateY(2.25em) scaleX(15);
     -webkit-animation-duration: 1.8s;
     animation-duration: 1.8s;
 }
@@ -655,6 +655,12 @@ article {
 .logo-b .logo-2,
 .logo-t .logo-2 {
     left: 1em;
+}
+.logo-t .logo-3,
+.logo-b .logo-3,
+.logo-r .logo-3,
+.logo-l .logo-3{
+    display: none;
 }
 .logo-b .logo-3,
 .logo-t .logo-3 {

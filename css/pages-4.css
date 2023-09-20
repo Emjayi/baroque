@@ -447,6 +447,7 @@ footer svg {
 }
 
 .footer-share {
+    color: rgb(207, 207, 207);
     margin-left: 3em;
     position: relative;
     bottom: .1em
@@ -477,10 +478,12 @@ footer svg {
 }
 
 .footer-share svg {
+    fill: rgb(207, 207, 207);;
     left: -3em
 }
 
 .footer-nav {
+    color: rgb(207, 207, 207);
     margin-right: 10em;
     display: -webkit-box;
     display: -webkit-flex;
