@@ -55,14 +55,14 @@
     height: 0;
     cursor: pointer;
     border-radius: inherit;
-    background-color: #777;
+    background-color: #d2a975;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
 
 .gm-scrollbar .thumb:hover,
 .gm-scrollbar .thumb:active {
-    background-color: #444
+    background-color: #645139
 }
 
 .gm-scrollbar.-vertical .thumb {
@@ -262,7 +262,7 @@
     font-size: 30px;
     line-height: 18px;
     opacity: 1;
-    color: gray;
+    color: #d2a975;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-transition: all 0.5s ease;
@@ -510,7 +510,7 @@ footer svg {
     right: 0;
     bottom: 0;
     margin: auto;
-    border: 4px solid #777;
+    border: 4px solid #d2a975;
     width: 15em;
     height: 23em;
     background: #fff;
@@ -560,7 +560,7 @@ footer svg {
 .share b {
     position: relative;
     top: .25em;
-    color: #777
+    color: #d2a975
 }
 
 .share i {
@@ -707,13 +707,14 @@ footer svg {
 
 .title-box h1,
 .title-box h2 {
+    color: rgb(212, 212, 212);
     font-size: 2em;
     position: absolute;
     height: 1em;
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #fff;
+    background: none;
     text-transform: lowercase;
     padding-right: .5em
 }
@@ -1517,7 +1518,7 @@ p.about-text-show {
     white-space: nowrap;
     margin-right: 6em;
     padding-left: 1em;
-    color: #000;
+    color: #ebebeb;
     height: 100%;
     width: 8em
 }
@@ -1570,6 +1571,7 @@ p.about-text-show {
 }
 
 .team-info svg {
+    fill: white;
     height: 1em;
     width: 1em
 }
@@ -1581,11 +1583,12 @@ p.about-text-show {
 
 .team-number {
     font-size: 2em;
-    color: #000;
+    color: #e3e3e3;
     opacity: .1
 }
 
 .team-number svg {
+    fill: white;
     width: .7em;
     height: .7em;
     margin-right: .05em
@@ -1594,7 +1597,7 @@ p.about-text-show {
 .team-nikname {
     text-transform: uppercase;
     padding-top: 1em;
-    color: #ccc
+    color: #313131
 }
 
 .team-img {
@@ -3247,7 +3250,7 @@ dt.about-text-show {
 
 .project-text-list svg {
     fill: none;
-    stroke: #000;
+    stroke: #dbdbdb;
     stroke-miterlimit: 10;
     overflow: visible;
     stroke-width: 2.5;

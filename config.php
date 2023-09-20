@@ -25,7 +25,7 @@ $minifyHtml = false;
 /*------------- site url ---------------*/
 /*--------------------------------------*/
 $domain_name =
-	'baroque';
+	'baroque.com';
 
 $site_url =
 	'' . $domain_name . '/';
@@ -56,7 +56,7 @@ $description_fa =
 $facebook_location =
 	'https://www.facebook.com/mohamadreza.khodayi';
 $facebook_location_txt =
-	'mohamadreza.khodayi';
+	'mohamad.khodayi';
 $insta_location =
 	'https://www.instagram.com/baroque/';
 $insta_location_txt =
@@ -91,7 +91,7 @@ $postal_address =
 	'No.61, Mirzaye-shirazi street, Tonekabon, Mashhad, Iran';
 $location_lat =
 	/*'36.8113942';*/
-	'36.8126526';
+	'36.32777441744313';
 $location_lang =
 	/*'50.8878299';*/
-	'50.8894463';
+	'59.530017077279695';
