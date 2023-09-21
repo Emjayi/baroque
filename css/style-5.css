@@ -1,3 +1,7 @@
+@font-face {
+    font-family: eurostile;
+    src: url(font/Eurostile.ttf);
+}
 a,
 article,
 aside,
@@ -114,15 +118,15 @@ img {
 }
 ::-moz-selection {
     background: #a27643;
-    color: #fff;
+    color: #000000;
 }
 ::selection {
     background: #a27643;
-    color: #fff;
+    color: #000000;
 }
 body {
-    font-family: Roboto, sans-serif;
-    color: #cbcbcb;
+    font-family: eurostile;
+    color: #cccccc;
     background: #1F2438;
     position: fixed;
     top: 0;
@@ -896,7 +900,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     font-size: 0.7em;
-    color: #666;
+    color: #c3c3c3;
     position: fixed;
     bottom: 0.5em;
     left: 0;
@@ -1048,7 +1052,7 @@ header {
         justify-content: center;
     }
     .nav-li {
-        width: 12em;
+        width: 10em;
     }
     .desktop .nav a:focus,
     .desktop .nav a:hover {
@@ -1395,7 +1399,7 @@ header {
 }
 .nav a {
     padding: 2em 1em;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     font-weight: 600;

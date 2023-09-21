@@ -1040,8 +1040,8 @@ footer svg {
     left: 3.5em;
     top: .4em;
     bottom: .5em;
-    background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0));
-    background: linear-gradient(90deg, white, rgba(255, 255, 255, 0));
+    /* background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0));
+    background: linear-gradient(90deg, white, rgba(255, 255, 255, 0)); */
     z-index: 100;
     opacity: 0;
     -webkit-transition: opacity 0.5s 1.5s;
@@ -1179,7 +1179,8 @@ footer svg {
     -webkit-transition: opacity 1s 0.4s;
     transition: opacity 1s 0.4s;
     opacity: 0;
-    will-change: transform
+    will-change: transform;
+    background-color: none;
 }
 
 .award-sec-2 .award-text {
@@ -1600,7 +1601,7 @@ p.about-text-show {
 .team-nikname {
     text-transform: uppercase;
     padding-top: 1em;
-    color: #313131
+    color: #ccc
 }
 
 .team-img {
@@ -2655,7 +2656,7 @@ span.ld-9 {
     text-transform: uppercase;
     margin-top: .25em;
     font-size: .85em;
-    color: #333;
+    color: #ccc;
     width: 100%;
     overflow: hidden;
     position: relative
@@ -2669,8 +2670,8 @@ span.ld-9 {
     width: 1.5em;
     top: 0;
     bottom: 0;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white)
+    /* background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white) */
 }
 
 .grid-info dl {
@@ -2707,7 +2708,7 @@ span.ld-9 {
     }
     .grid-link:hover dd,
     .grid-link:focus dd {
-        color: #444
+        color: #d2a975
     }
 }
 
@@ -2736,7 +2737,7 @@ span.ld-9 {
     -ms-flex-align: center;
     align-items: center;
     z-index: 1;
-    background: #fff;
+    background: noneS;
     pointer-events: none;
     overflow: hidden;
     -webkit-transition: -webkit-transform 0.5s;
@@ -2807,8 +2808,10 @@ span.ld-9 {
     left: 0;
     right: 0;
     display: none;
+    /* old settings
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
-    background: linear-gradient(rgba(255, 255, 255, 0), white)
+    background: linear-gradient(rgba(255, 255, 255, 0), white) */
+    background-color: #1F2438;
 }
 
 .desktop .grid-options-container:after {
@@ -2902,7 +2905,7 @@ span.ld-9 {
 }
 
 .grid-options-list {
-    color: #000
+    color: #ccc
 }
 
 .grid-options-list li {
@@ -3737,7 +3740,7 @@ dt.about-text-show {
 }
 
 .project-slide .grid-loading {
-    background: #fff;
+    background: #3a3a3a;
     display: none
 }
 

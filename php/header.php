@@ -27,19 +27,23 @@ if (isset($pageClass_noJS))
 			<div class="nav-ul" id="nav">
 				<div class="nav-li">
 					<a href="<?php echo $rootPath ?>about/" data-nav="about" tabindex="-1"
-						class="smoooth focusable">about</a>
+						class="smoooth focusable">team</a>
+				</div>
+				<div class="nav-li">
+					<a href="<?php echo $rootPath ?>construction/" data-nav="construction" tabindex="-1"
+						class="smoooth focusable">construction</a>
 				</div>
 				<div class="nav-li">
 					<a href="<?php echo $rootPath ?>projects/" data-nav="projects" tabindex="-1"
 						class="smoooth focusable">projects</a>
 				</div>
 				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>awards/" data-nav="awards" tabindex="-1"
-						class="smoooth focusable">awards</a>
+					<a href="<?php echo $rootPath ?>contact/" data-nav="contact" tabindex="-1"
+						class="smoooth focusable">about us</a>
 				</div>
 				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>contact/" data-nav="contact" tabindex="-1"
-						class="smoooth focusable">contact</a>
+					<a href="<?php echo $rootPath ?>awards/" data-nav="awards" tabindex="-1"
+						class="smoooth focusable">news</a>
 				</div>
 			</div>
 		</nav>

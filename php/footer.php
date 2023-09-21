@@ -3,7 +3,7 @@
 <!-- footer -->
 <footer>
 	<!-- footer nav -->
-	<nav class="footer-nav" id="footer-nav">
+	<!-- <nav class="footer-nav" id="footer-nav">
 		<p style="color:#666">navigation:</p>
 
 		<a href=" <?php echo $rootPath ?>about/" data-nav="about" tabindex="-1" class="smoooth focusable">about</a>
@@ -14,7 +14,7 @@
 		<a href="<?php echo $rootPath ?>awards/" data-nav="awards" tabindex="-1" class="smoooth focusable">awards</a>
 
 		<a href="<?php echo $rootPath ?>contact/" data-nav="contact" tabindex="-1" class="smoooth focusable">contact</a>
-	</nav>
+	</nav> -->
 
 	<!-- footer credits -->
 	<p class="footer-copy">&copy;<span>
@@ -29,7 +29,7 @@
 		<a href="http://khatoonadvertising.ir/" title="web design and development by: Khatoon" target="_blank"
 			class="footer-icon">
 			<?php require($path . 'img/misk/peji.svg'); ?>
-			<i>Khatoon</i>
+			<i>Khatoon Advertising</i>
 		</a>
 	</p>
 
