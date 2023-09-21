@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Traditional Bazar Tonekabon
+-- YEAR -------------------------------------------
+2019
+-- AREA (m 2) -------------------------------------
+8000
+-- TYPE (residential, commercial, etc) ------------
+Commercial 
+-- STATUS ( compeleted, in progress, concept ) ----
+concept
+===================================================
+--Location
+Tonekabon , Mazandaran , Iran
+-- Client
+Shahrdari Tonekabon 

@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Aqua Sport Complex
+-- YEAR -------------------------------------------
+2019
+-- AREA (m 2) -------------------------------------
+5000
+-- TYPE (residential, commercial, etc) ------------
+Commercial
+-- STATUS ( compeleted, in progress, concept ) ----
+concept
+===================================================
+-- Location
+vanoosh , Mazandaran , Iran
+-- Client
+Mr Hossein Khosravani

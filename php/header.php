@@ -22,10 +22,27 @@ if (isset($pageClass_noJS))
 	</script>
 
 	<header class="main-container" id="header">
-		<!-- site title -->
-		<div class="site-title" id="site-title">
-			<h2><b>baroque</b></h2>
-		</div>
+		<!-- main menu -->
+		<nav class="nav">
+			<div class="nav-ul" id="nav">
+				<div class="nav-li">
+					<a href="<?php echo $rootPath ?>about/" data-nav="about" tabindex="-1"
+						class="smoooth focusable">about</a>
+				</div>
+				<div class="nav-li">
+					<a href="<?php echo $rootPath ?>projects/" data-nav="projects" tabindex="-1"
+						class="smoooth focusable">projects</a>
+				</div>
+				<div class="nav-li">
+					<a href="<?php echo $rootPath ?>awards/" data-nav="awards" tabindex="-1"
+						class="smoooth focusable">awards</a>
+				</div>
+				<div class="nav-li">
+					<a href="<?php echo $rootPath ?>contact/" data-nav="contact" tabindex="-1"
+						class="smoooth focusable">contact</a>
+				</div>
+			</div>
+		</nav>
 
 		<!-- logo -->
 		<div id="logo" class="logo">
@@ -87,27 +104,10 @@ if (isset($pageClass_noJS))
 		<div id="menu-closer"></div>
 		<div id="menu-go"></div>
 
-		<!-- main menu -->
-		<nav class="nav">
-			<div class="nav-ul" id="nav">
-				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>about/" data-nav="about" tabindex="-1"
-						class="smoooth focusable">about</a>
-				</div>
-				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>projects/" data-nav="projects" tabindex="-1"
-						class="smoooth focusable">projects</a>
-				</div>
-				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>awards/" data-nav="awards" tabindex="-1"
-						class="smoooth focusable">awards</a>
-				</div>
-				<div class="nav-li">
-					<a href="<?php echo $rootPath ?>contact/" data-nav="contact" tabindex="-1"
-						class="smoooth focusable">contact</a>
-				</div>
-			</div>
-		</nav>
+		<!-- site title -->
+		<div class="site-title" id="site-title">
+			<h2><b>baroque</b></h2>
+		</div>
 
 	</header>
 

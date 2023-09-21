@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Ananas Villa
+-- YEAR -------------------------------------------
+2018
+-- AREA (m 2) -------------------------------------
+500
+-- TYPE (residential, commercial, etc) ------------
+Villa
+-- STATUS ( compeleted, in progress, concept ) ----
+Compeleted
+===================================================
+-- Location
+Noor , Mazandaran , Iran
+-- Client
+Mr Noorian

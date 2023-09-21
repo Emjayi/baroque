@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Asa Tower
+-- YEAR -------------------------------------------
+2021
+-- AREA (m 2) -------------------------------------
+20000
+-- TYPE (residential, commercial, etc) ------------
+Apartment
+-- STATUS ( compeleted, in progress, concept ) ----
+concept
+===================================================
+-- Location
+Kelarabad , Mazandaran , Iran
+-- Client
+Mr. Karati

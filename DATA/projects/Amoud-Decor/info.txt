@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Amoud Decor
+-- YEAR -------------------------------------------
+2015
+-- AREA (m 2) -------------------------------------
+90
+-- TYPE (residential, commercial, etc) ------------
+Commercial
+-- STATUS ( compeleted, in progress, concept ) ----
+compeleted
+===================================================
+--Location
+Nashtarud , Mazandaran , Iran
+-- Client
+Mr. Pish Ghadam

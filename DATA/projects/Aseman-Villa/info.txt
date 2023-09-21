@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Aseman Villa
+-- YEAR -------------------------------------------
+2021
+-- AREA (m 2) -------------------------------------
+500
+-- TYPE (residential, commercial, etc) ------------
+Villa
+-- STATUS ( compeleted, in progress, concept ) ----
+Concept
+===================================================
+-- Location
+Shahsavar , Mazandaran , Iran
+-- Client
+Mr Parsa Zafari

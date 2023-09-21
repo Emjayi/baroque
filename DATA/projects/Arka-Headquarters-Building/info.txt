@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Arka Headquarters Building 
+-- YEAR -------------------------------------------
+2021
+-- AREA (m 2) -------------------------------------
+500
+-- TYPE (residential, commercial, etc) ------------
+Commercial
+-- STATUS ( compeleted, in progress, concept ) ----
+concept
+===================================================
+-- Location
+Tehran , Iran
+-- Client
+Mr Shahsavand

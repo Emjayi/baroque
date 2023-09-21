@@ -1,0 +1,15 @@
+﻿-- PROJECT NAME -----------------------------------
+Fluid Pavilion Barase
+-- YEAR -------------------------------------------
+2022
+-- AREA (m 2) -------------------------------------
+3800 
+-- TYPE (residential, commercial, etc) ------------
+villa
+-- STATUS ( compeleted, in progress, concept ) ----
+ in  progress
+===================================================
+-- Location
+ Barase , Mazandaran , Iran
+-- Client
+Mr Mohegh
