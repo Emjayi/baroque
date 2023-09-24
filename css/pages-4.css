@@ -1358,7 +1358,7 @@ footer svg {
     color: #a08a67
 }
 
-.about-section {
+.team-section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1369,7 +1369,7 @@ footer svg {
     align-items: center
 }
 
-.about-title {
+.team-title {
     margin-left: 20vm;
     margin-left: 20vmin;
     font-size: 1.5em;
@@ -1380,7 +1380,7 @@ footer svg {
     white-space: nowrap
 }
 
-.about-text {
+.team-text {
     height: auto;
     margin: auto;
     -webkit-flex-shrink: 0;
@@ -1397,12 +1397,12 @@ footer svg {
 }
 
 @media (max-width:500px) {
-    .about-text {
+    .team-text {
         margin-right: 2em
     }
 }
 
-.about-text p {
+.team-text p {
     max-width: 15em;
     width: 60vw;
     padding-bottom: .5em;
@@ -1414,7 +1414,7 @@ footer svg {
     transform: translate3d(2em, 0, 0)
 }
 
-p.about-text-show {
+p.team-text-show {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
@@ -1422,7 +1422,7 @@ p.about-text-show {
 }
 
 @media (max-width:700px) {
-    .about-text {
+    .team-text {
         -webkit-column-width: 50vm;
         -moz-column-width: 50vm;
         column-width: 50vm;
@@ -1433,7 +1433,7 @@ p.about-text-show {
     }
 }
 
-.about-pic {
+.team-pic {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1444,7 +1444,7 @@ p.about-text-show {
     overflow: hidden
 }
 
-.about-img {
+.team-img {
     height: 100%;
     width: auto;
     -webkit-flex-shrink: 0;
@@ -1452,7 +1452,7 @@ p.about-text-show {
     flex-shrink: 0
 }
 
-.about-main-svg {
+.team-main-svg {
     width: 110%;
     height: auto;
     z-index: 1;
@@ -1462,7 +1462,7 @@ p.about-text-show {
     bottom: -5%
 }
 
-.about-main-svg-bg {
+.team-main-svg-bg {
     position: absolute;
     right: 0;
     width: auto;
@@ -1472,15 +1472,15 @@ p.about-text-show {
 }
 
 @media (max-width:900px) {
-    .about-main-svg {
+    .team-main-svg {
         overflow: visible
     }
-    .about-main-svg-bg {
+    .team-main-svg-bg {
         display: none
     }
 }
 
-.about-pic figcaption {
+.team-pic figcaption {
     position: absolute;
     bottom: 2em;
     right: 2em;
@@ -1491,12 +1491,12 @@ p.about-text-show {
     z-index: 10
 }
 
-.about-team-section {
+.team-members-section {
     margin-left: 10vm;
     margin-left: 10vmin
 }
 
-.about-team {
+.team-members {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3245,9 +3245,9 @@ span.ld-9 {
     display: block
 }
 
-h3.about-text-show,
-dd span.about-text-show,
-dt.about-text-show {
+h3.team-text-show,
+dd span.team-text-show,
+dt.team-text-show {
     opacity: 1;
     -webkit-transform: none;
     -ms-transform: none;
